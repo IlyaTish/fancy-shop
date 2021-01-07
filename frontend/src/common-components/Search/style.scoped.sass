@@ -1,0 +1,45 @@
+@import 'styles/variables'
+
+.search
+  width: 100%
+  display: flex
+  margin: 0 0 0 2.375rem
+  position: relative
+  z-index: 99
+  order: 4
+
+  &__input
+    padding: 0.5rem 1rem
+    font-weight: 500
+    border: 2px solid #F1F1F1
+    border-radius: 60px 0 0 60px
+    background: #FFFFFF
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1)
+    outline: none
+
+    &::placeholder
+      color: $light-gray
+      font-size: 1rem
+      font-weight: 500
+
+    &:hover
+      border: 2px solid darken($gray, 6%)
+      opacity: 1
+
+    &:focus
+      border: 2px solid $main
+
+  &__btn
+    width: 3.375rem
+    padding: 0
+    right: 2px
+    position: relative
+    border: none
+    border-radius: 0 60px 60px 0
+    background: $main
+    box-sizing: border-box
+    transition: .2s
+    cursor: pointer
+
+    &:hover
+      background: darken($main, 10%)

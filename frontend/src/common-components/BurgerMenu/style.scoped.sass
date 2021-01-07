@@ -1,0 +1,45 @@
+@import 'styles/variables'
+
+.burger-menu
+  width: 100vw
+  top: -400px
+  left: 0
+  position: absolute
+  background: #FFFFFF
+  box-shadow: 0 8px 6px 1px #00000014
+  transition: .2s
+  opacity: 0
+  z-index: 3
+
+  .header-nav
+    &__list
+      display: block
+      margin: 0
+      padding: 0
+      border-top: 1px solid $gray
+
+    &__item
+      width: 100%
+      margin: 0
+
+      &:first-of-type
+        .header-nav__link
+          border: none
+
+    &__link
+      width: 100%
+      padding: 0.625rem 0.75rem
+      display: block
+      color: $black
+      font-size: 0.875rem
+      border-top: 1px solid $gray
+      box-sizing: border-box
+
+      &:hover
+        color: $main
+
+.hidden
+  opacity: 0
+
+.burger-menu.active
+  opacity: 1

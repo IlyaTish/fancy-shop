@@ -1,0 +1,111 @@
+@media (max-width: 1199px)
+  .footer
+    &__title
+      font-size: 1.375rem
+
+    &__txt
+      font-size: .875rem
+
+    &__col-2
+      max-width: 27.5rem
+
+  .footer-form
+    .input
+      padding: .25rem .625rem
+
+  .footer-menu
+    &__link
+      font-size: .875rem
+
+  .footer-bottom
+    padding: 1.25rem 0
+
+
+@media (max-width: 991px)
+  .footer
+    &__cont
+      display: grid
+      grid-gap: 6vw
+      grid-template-columns: 2fr 5fr 2fr
+
+    &__col-4
+      display: none
+
+    &__title
+      margin: 0 0 1rem
+
+  .footer-logo
+    max-width: 8.75rem
+    margin: 0 0 1rem
+
+  .footer-bottom
+    &__cont
+      justify-content: center
+
+    &__cont > * + *
+      margin: .25rem 0 0
+
+    &__txt,
+    &__links
+      text-align: center
+
+
+@media (max-width: 767px)
+  .footer
+    &__cont
+      padding: 1.75rem 0
+      grid-template-columns: 1fr 2fr 1fr
+
+    &__wrapper
+      max-height: 152px
+      overflow-x: hidden
+      overflow-y: scroll
+
+  .footer-menu
+    &--2-cols
+      column-count: 1
+
+
+@media (max-width: 590px)
+  .footer-bottom
+    &__cont > * + *
+      margin: .625rem 0 0
+
+
+@media (max-width: 479px)
+  .footer
+    &__cont
+      grid-template-columns: 1fr 1.6fr
+
+    &__col-3
+      display: none
+
+  .footer-menu
+    &__item
+      margin: 0 0 .75rem
+
+  .footer-bottom
+    &__link
+      display: block
+
+
+@media (max-width: 400px)
+  .footer
+    &__cont
+      display: block
+      grid-gap: 0
+
+    &__col-1
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+
+    &__col-2
+      display: none
+
+    &__txt
+      font-size: 1rem
+
+  .footer-logo
+    max-width: none
