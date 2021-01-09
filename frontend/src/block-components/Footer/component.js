@@ -7,6 +7,8 @@ import './responsive.scoped.sass'
 
 
 
+/* Functional component */
+
 const Footer = () => {
   return (
     <footer className='footer'>

@@ -1,6 +1,6 @@
 /* Includes */
 
-//  Styles
+// Styles
 
 import './style.scoped.sass'
 

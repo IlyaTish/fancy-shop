@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 
-//  Styles
+// Styles
 
 import './style.scoped.sass'
 import './responsive.scoped.sass'
@@ -10,10 +10,10 @@ import './responsive.scoped.sass'
 // Icons
 
 import { ICONS } from 'data/icons'
-import CommonIcon from 'icon-components/common-icon/component'
-import EvenoddIcon from 'icon-components/evenodd-icon/component'
-import IncomingCallIcon from 'icon-components/incoming-call/component'
-import SignInIcon from 'icon-components/sign-in/component'
+import CommonIcon from 'icon-components/commonIcon/component'
+import EvenoddIcon from 'icon-components/evenoddIcon/component'
+import IncomingCallIcon from 'icon-components/incomingCall/component'
+import SignInIcon from 'icon-components/signIn/component'
 
 // Common components
 
@@ -29,10 +29,10 @@ import windowDimensions from 'hooks/useWindowDimensions'
 /* Functional component */
 
 const Header = () => {
-  const { width, height } = windowDimensions(),
-    [isActive, setActive] = useState('false'),
-    [headerHeight, setHeight] = useState(null),
-    headerRef = useRef(null)
+  const { width, height }         = windowDimensions(),
+        [isActive, setActive]     = useState('false'),
+        [headerHeight, setHeight] = useState(null),
+        headerRef                 = useRef(null)
 
   const handleToggle = () => setActive(!isActive);
 
@@ -43,7 +43,6 @@ const Header = () => {
       handleHeight();
 
       window.addEventListener('resize', handleHeight);
-
       return () => window.removeEventListener('resize', handleHeight)
     }
   }, [headerRef])

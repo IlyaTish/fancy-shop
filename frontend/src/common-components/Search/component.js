@@ -1,14 +1,14 @@
 /* Includes */
 
-//  Styles
+// Styles
 
 import './style.scoped.sass'
 import './responsive.scoped.sass'
 
-// Icons 
+// Icons
 
 import { ICONS } from 'data/icons'
-import CommonIcon from 'icon-components/common-icon/component'
+import CommonIcon from 'icon-components/commonIcon/component'
 
 
 
