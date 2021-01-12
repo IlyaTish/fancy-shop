@@ -27,11 +27,19 @@ const productSchema = mongoose.Schema(
       required: true,
       ref: 'User'
     },
+    labels: {
+      type: Array,
+      required: true
+    },
     name: {
       type: String,
       required: true
     },
     image: {
+      type: String,
+      required: true
+    },
+    image_2x: {
       type: String,
       required: true
     },

@@ -8,7 +8,7 @@ import './responsive.scoped.sass'
 // Icons
 
 import { ICONS } from 'data/icons'
-import CommonIcon from 'icon-components/commonIcon/component'
+import CommonIcon from 'components/icon-components/commonIcon/component'
 
 
 

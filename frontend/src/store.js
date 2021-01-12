@@ -6,7 +6,7 @@ import { productListReducer } from './reducers/productReducers'
 
 
 const reducer = combineReducers({
-  productList: productListReducer
+  popularProducts: productListReducer
 })
 
 const initialState = {}

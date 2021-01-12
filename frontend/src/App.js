@@ -9,11 +9,9 @@ import 'swiper/swiper.scss'
 
 // Block components
 
-import Header from 'block-components/Header/component'
-import Footer from 'block-components/Footer/component'
-import Main from 'block-components/Main/component'
-import CatalogNav from 'block-components/CatalogNav/component'
-import PopularProducts from 'block-components/PopularProducts/component'
+import Header from 'components/block-components/Header/component'
+import Footer from 'components/block-components/Footer/component'
+import HomePage from 'components/page-components/home-page/component'
 
 
 
@@ -24,9 +22,7 @@ class App extends React.Component {
         <Header />
 
         <main className='content'>
-          <Main />
-          <CatalogNav />
-          <PopularProducts />
+          <HomePage />
         </main>
 
         <Footer />

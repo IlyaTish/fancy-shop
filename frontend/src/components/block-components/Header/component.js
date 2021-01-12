@@ -10,15 +10,15 @@ import './responsive.scoped.sass'
 // Icons
 
 import { ICONS } from 'data/icons'
-import CommonIcon from 'icon-components/commonIcon/component'
-import EvenoddIcon from 'icon-components/evenoddIcon/component'
-import IncomingCallIcon from 'icon-components/incomingCall/component'
-import SignInIcon from 'icon-components/signIn/component'
+import CommonIcon from 'components/icon-components/commonIcon/component'
+import EvenoddIcon from 'components/icon-components/evenoddIcon/component'
+import IncomingCallIcon from 'components/icon-components/incomingCall/component'
+import SignInIcon from 'components/icon-components/signIn/component'
 
 // Common components
 
-import BurgerMenu from 'common-components/BurgerMenu/component'
-import Search from 'common-components/Search/component'
+import BurgerMenu from 'components/common-components/BurgerMenu/component'
+import Search from 'components/common-components/Search/component'
 
 // Helper scripts
 
