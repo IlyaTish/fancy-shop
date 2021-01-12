@@ -4,16 +4,16 @@ const reviewSchema = mongoose.Schema(
   {
     name: {
       type: String,
-      required: true,
+      required: true
     },
     rating: {
       type: Number,
-      required: true,
+      required: true
     },
     comment: {
       type: String,
-      required: true,
-    },
+      required: true
+    }
   },
   {
     timestamps: true,
@@ -28,8 +28,7 @@ const productSchema = mongoose.Schema(
       ref: 'User'
     },
     labels: {
-      type: Array,
-      required: true
+      type: Array
     },
     name: {
       type: String,
@@ -70,6 +69,9 @@ const productSchema = mongoose.Schema(
       type: Number,
       required: true,
       default: 0
+    },
+    old_price: {
+      type: Number
     },
     countInStoke: {
       type: Number,

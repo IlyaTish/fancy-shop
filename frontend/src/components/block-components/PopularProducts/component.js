@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 // Import Swiper React components
 
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide, Autoplay } from 'swiper/react'
 
 // Styles
 
@@ -30,6 +30,17 @@ const PopularProducts = () => {
   const popularProducts = useSelector((state) => state.popularProducts)
   const { loading, error, products } = popularProducts
 
+  const swiperParams = {
+    slidesPerView: 'auto',
+    direction: 'horizontal',
+    autoplay: {
+      delay: 12000
+    },
+    mousewheel: {
+      forceToAxis: true
+    }
+  }
+
   useEffect(() => {
     dispatch(productListAction())
   }, [dispatch])
@@ -38,18 +49,15 @@ const PopularProducts = () => {
     <section className='popular'>
       <div className='container'>
         {loading ? (
-          <h2>Loading...</h2>
+          <h2>Загрузка...</h2>
         ) : error ? (
           <h3>{error}</h3>
         ) : (
           <Swiper
             className='product-items-swiper swiper-container'
-            slidesPerView={'auto'}
-            direction={'horizontal'}
-            autoplay={{ delay: 12000 }}
-            mousewheel={{ forceToAxis: true }}
+            {...swiperParams}
           >
-            {products.map((product) => (
+            {products.map(product => (
               <SwiperSlide key={product._id}>
                 <ProductItem product={product} />
               </SwiperSlide>

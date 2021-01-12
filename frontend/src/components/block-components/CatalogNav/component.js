@@ -14,15 +14,23 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 /* Functional component */
 
 const CatalogNav = () => {
+  const swiperParams = {
+    slidesPerView: 'auto',
+    direction: 'horizontal',
+    autoplay: {
+      delay: 5000
+    },
+    mousewheel: {
+      forceToAxis: true
+    }
+  }
+
   return (
     <div className='catalog-nav-wrapper'>
       <div className='container'>
         <Swiper
           className='catalog-nav-swiper items-swiper swiper-container'
-          slidesPerView={'auto'}
-          direction={'horizontal'}
-          autoplay={{ delay: 12000 }}
-          mousewheel={{ forceToAxis: true }}
+          {...swiperParams}
         >
           <SwiperSlide>
             <a className='catalog-nav-swiper__link' href='/home'>

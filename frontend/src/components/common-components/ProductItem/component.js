@@ -5,6 +5,8 @@
 import './style.scoped.sass'
 import './responsive.scoped.sass'
 
+
+
 /* Functional component */
 
 const ProductItem = ({ product }) => {
@@ -13,7 +15,7 @@ const ProductItem = ({ product }) => {
       {product.labels[0] && (
         <div className='tag-label'>
           <div className='tag pink'>
-            {product.labels.map(label => {
+            {product.labels.map((label) => {
               return label
             })}
             <div className='flag' />
@@ -33,11 +35,13 @@ const ProductItem = ({ product }) => {
         <span className='product-item__price product-item__price--new price'>
           {product.price}
         </span>
-        {/* <span className='product-item__price product-item__price--old price'>
-          15 000
-        </span> */}
+        {product.old_price && (
+          <span className='product-item__price product-item__price--old price'>
+            {product.old_price}
+          </span>
+        )}
       </div>
-      <a href='/home' className='btn' href='#'>
+      <a className='btn' href='/home'>
         <span className='btn__txt'>В корзину</span>
       </a>
     </a>
