@@ -1,6 +1,5 @@
 {
   "name": "fancy-shop",
-  "proxy": "http://127.0.0.1:5000",
   "version": "1.0.0",
   "description": "Fancy.shop - family store",
   "main": "server.js",
@@ -17,6 +16,7 @@
   "author": "Илья Тищенко <ilya.tishencko676@yandex.ru>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "colors": "^1.4.0",
     "craco-plugin-scoped-css": "^1.1.0",
